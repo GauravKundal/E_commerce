@@ -39,7 +39,7 @@ export const Stepper: React.FC = () => {
         {/* Progress Line Background */}
         <div className="absolute left-8 right-8 top-1/2 -translate-y-1/2 h-1 bg-slate-200 -z-0" />
         
-        {steps.map((s, idx) => {
+        {steps.map((s, _) => {
           const isCompleted = currentIdx > s.number;
           const isCurrent = step === s.id;
           const isClickable = s.number < currentIdx;
